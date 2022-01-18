@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.keyboard_wrapper {
+    border: 1px solid red;
+    width: 740px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 4px 4px ;
+}
+
+.keyboard_wrapper .display{
+    border: 1px solid red;
+}
+
+.keyboard_wrapper .key{
+    border: 1px solid green;
+}
