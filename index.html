@@ -51,17 +51,11 @@
                 <input type="button" value="m" name="m" onclick="displayText(m.value)">
             </div>
             <div class="keys">
-                <input type="button" value="space">
+                <input type="button" id="space" value="space">
             </div>
         </form>
     </div>
-    <script>
-        function displayText(result) {
-            console.log(result);
-            console.log(keyType.textarea.value);
-            keyType.textarea.value = keyType.textarea.value + result;
-        }
-        // const spaceBtn = document.querySelector();
+    <script src="app.js">
     </script>
 </body>
 

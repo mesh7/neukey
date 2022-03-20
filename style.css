@@ -49,7 +49,7 @@ body {
   box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 
-.wrapper .keys input:focus {
+.wrapper .keys input:active {
   color: grey;
   font-size: 19px;
   box-shadow: inset -3px -3px 7px #ffffff73,
@@ -72,6 +72,7 @@ body {
   border: none;
   outline: none;
   resize: none;
+  color: #3498db;
   font-size: 24px;
   padding: 10px 15px;
   border-radius: 10px;
