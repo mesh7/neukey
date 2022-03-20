@@ -13,46 +13,56 @@
 </head>
 
 <body>
-    <script src="app.js"></script>
     <div class="container">
-        <div class="wrapper">
-            <div class="keys">
-                <input type="button" value="q">
-                <input type="button" value="w">
-                <input type="button" value="e">
-                <input type="button" value="r">
-                <input type="button" value="t">
-                <input type="button" value="y">
-                <input type="button" value="u">
-                <input type="button" value="i">
-                <input type="button" value="o">
-                <input type="button" value="p">
+        <form class="wrapper" name="keyType">
+            <div class="display">
+                <textarea name="keyTypeArea" cols="30" rows="10"></textarea>
             </div>
             <div class="keys">
-                <input type="button" value="a">
-                <input type="button" value="s">
-                <input type="button" value="d">
-                <input type="button" value="f">
-                <input type="button" value="g">
-                <input type="button" value="h">
-                <input type="button" value="j">
-                <input type="button" value="k">
-                <input type="button" value="l">
+                <input type="button" value="q" name="q" onclick="displayText(q.value)">
+                <input type="button" value="w" name="w" onclick="displayText(w.value)">
+                <input type="button" value="e" name="e" onclick="displayText(e.value)">
+                <input type="button" value="r" name="r" onclick="displayText(r.value)">
+                <input type="button" value="t" name="t" onclick="displayText(t.value)">
+                <input type="button" value="y" name="y" onclick="displayText(y.value)">
+                <input type="button" value="u" name="u" onclick="displayText(u.value)">
+                <input type="button" value="i" name="i" onclick="displayText(i.value)">
+                <input type="button" value="o" name="o" onclick="displayText(o.value)">
+                <input type="button" value="p" name="p" onclick="displayText(p.value)">
             </div>
             <div class="keys">
-                <input type="button" value="z">
-                <input type="button" value="x">
-                <input type="button" value="c">
-                <input type="button" value="v">
-                <input type="button" value="b">
-                <input type="button" value="n">
-                <input type="button" value="m">
+                <input type="button" value="a" name="a" onclick="displayText(a.value)">
+                <input type="button" value="s" name="s" onclick="displayText(s.value)">
+                <input type="button" value="d" name="d" onclick="displayText(d.value)">
+                <input type="button" value="f" name="f" onclick="displayText(f.value)">
+                <input type="button" value="g" name="g" onclick="displayText(g.value)">
+                <input type="button" value="h" name="h" onclick="displayText(h.value)">
+                <input type="button" value="j" name="j" onclick="displayText(j.value)">
+                <input type="button" value="k" name="k" onclick="displayText(k.value)">
+                <input type="button" value="l" name="l" onclick="displayText(l.value)">
+            </div>
+            <div class="keys">
+                <input type="button" value="z" name="z" onclick="displayText(z.value)">
+                <input type="button" value="x" name="x" onclick="displayText(x.value)">
+                <input type="button" value="c" name="c" onclick="displayText(c.value)">
+                <input type="button" value="v" name="v" onclick="displayText(v.value)">
+                <input type="button" value="b" name="b" onclick="displayText(b.value)">
+                <input type="button" value="n" name="n" onclick="displayText(n.value)">
+                <input type="button" value="m" name="m" onclick="displayText(m.value)">
             </div>
             <div class="keys">
                 <input type="button" value="space">
             </div>
-        </div>
-        <pre class="display"></pre>
+        </form>
     </div>
+    <script>
+        function displayText(result) {
+            console.log(result);
+            console.log(keyType.textarea.value);
+            keyType.textarea.value = keyType.textarea.value + result;
+        }
+        // const spaceBtn = document.querySelector();
+    </script>
 </body>
+
 </html>
